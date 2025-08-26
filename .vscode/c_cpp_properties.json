@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/SpaceCadetPinball",
-                "D:\\msys64\\mingw64\\include\\SDL2"
+                "D:\\msys64\\mingw64\\include\\SDL2",
+                "${workspaceFolder}/Tools"
             ],
             "defines": [
                 "_DEBUG",
