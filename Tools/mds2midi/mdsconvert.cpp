@@ -1,7 +1,8 @@
-#include "mdsconvert.h"
+#include "mdsconvert.hpp"
 
-#include "mds2midi_deps.h"
+#include "mds2midi_deps.hpp"
 
+// ..........以下来自SpaceCadetPinball/midi.cpp..........
 
 constexpr uint32_t FOURCC(uint8_t a, uint8_t b, uint8_t c, uint8_t d)
 {

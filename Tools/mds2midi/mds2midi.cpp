@@ -1,11 +1,16 @@
-#include "mds2midi_deps.h"
-#include "mdsconvert.h"
+#include "mds2midi_deps.hpp"
+#include "mdsconvert.hpp"
 
 
 int main(int argc, char* argv[]) 
 {
     if (argc != 3) {
-        printf("用法: mds2midi <输入.mds> <输出.mid>\n");
+        printf("mds2midi v1.00, Full Tilt! MDS文件转换器\n");
+        printf("By SystemFileB and contributors\n\n");
+        printf("用法: mds2midi <INPUT.mds> <OUTPUT.mid>\n\n");
+        printf("INPUT       来自Full Tilt! Space Cadet的SOUND/TABA*.MDS文件\n");
+        printf("OUTPUT      输出的MIDI文件\n\n");
+        printf("Full Tilt! 来自Cinematronics和Maxis\n");
         return 1;
     }
 

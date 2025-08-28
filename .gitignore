@@ -300,3 +300,6 @@ _deps
 build.ninja
 # Build directory
 /build
+
+# Trae 个人信息
+/.marscode

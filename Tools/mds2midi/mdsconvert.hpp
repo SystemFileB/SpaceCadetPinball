@@ -1,4 +1,6 @@
-#include "mds2midi_deps.h"
+#include "mds2midi_deps.hpp"
+
+// ..........以下来自SpaceCadetPinball/midi.h..........
 
 #pragma once
 #pragma pack(push, 1)
