@@ -303,3 +303,6 @@ build.ninja
 
 # Trae 个人信息
 /.marscode
+
+# mds2midi 构建输出
+Tools/mds2midi/build

@@ -31,3 +31,24 @@ int main(int argc, char* argv[])
     delete midiData;
     return 0;
 }
+
+#ifdef _WIN32
+#include <windows.h>
+FILE* fopenu(const char* path, const char* opt)
+{
+	wchar_t* wideArgs[2]{};
+	for (auto& arg : wideArgs)
+	{
+		auto src = wideArgs[0] ? opt : path;
+		auto length = MultiByteToWideChar(CP_UTF8, 0, src, -1, nullptr, 0);
+		arg = new wchar_t[length];
+		MultiByteToWideChar(CP_UTF8, 0, src, -1, arg, length);
+	}
+
+	auto fileHandle = _wfopen(wideArgs[0], wideArgs[1]);
+	for (auto arg : wideArgs)
+		delete[] arg;
+
+	return fileHandle;
+}
+#endif

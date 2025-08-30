@@ -1,6 +1,11 @@
 <!-- markdownlint-disable-file MD033 -->
 
-# SpaceCadetPinball
+# SpaceCadetPinball Emscripten移植版本
+这个是SpaceCadetPinball的另外一个Emscripten移植版本，alula和其他的移植版本已经很久没维护了，所以我又用自己的方式移植了一个
+
+虽然这个版本对Emscripten平台进行了调整，但是你仍然可以用MinGW-w64，MSVC，GCC，Clang等工具链来编译它
+
+# 原SpaceCadetPinball README
 
 ## Summary
 
